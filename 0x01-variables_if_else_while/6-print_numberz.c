@@ -13,7 +13,7 @@ int main(void)
 	int u = 0;
 	int f = 48;
 
-	while (u < 58)
+	while (u < 10)
 {
 		putchar(u + f);
 		u++;
