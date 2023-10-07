@@ -18,7 +18,7 @@ int main(void)
 	putchar(n + 48);
 	n++;
 }
-	while (l <= 6)
+	while (l <= 5)
 {
 	putchar(l + 97);
 	l++;
