@@ -20,8 +20,8 @@ int main(void)
 	if (n > 0)
 		printf("the %d is positive\n", n);
 	else if (n == 0)
-		print("the %d is zero\n", n);
+		printf("the %d is zero\n", n);
 	else
-		print("the %d is negative\n", n);
+		printf("the %d is negative\n", n);
 	return (0);
 }
