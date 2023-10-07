@@ -12,7 +12,7 @@ int main(void)
 	int F = 0;
 	int D = 97;
 
-	while (F <= 26)
+	while (F <= 25)
 {
 		putchar(F + D);
 		F++;
