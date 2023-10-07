@@ -9,8 +9,8 @@
 */
 int main(void)
 {
-	int F = 0
-	int D = 97
+	int F = 0;
+	int D = 97;
 
 	while (F <= 27)
 {
