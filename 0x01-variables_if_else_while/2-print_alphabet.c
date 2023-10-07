@@ -17,5 +17,6 @@ int main(void)
 		putchar(F + D);
 		F++;
 }
+	putchar('\n')
 	return (0);
 }
