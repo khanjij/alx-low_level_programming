@@ -1,9 +1,9 @@
 #include"main.h"
 
 /**
- * print_alphabet_x10 - fuction will print alphabet lower case 10 timess
+ * Description: fuction will print alphabet lower case 10 timess
  *
- */
+*/
 
 void print_alphabet_x10(void)
 {
