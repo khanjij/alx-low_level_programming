@@ -1,11 +1,12 @@
 #include"main.h"
 
 /**
- *print_sign - print sign ef integer
+ * print_sign - print + if n greater than zero.
+ *	0 if zero and -1 if n less than zero.
  *
- *Description : print sign of number
+ * @n : takes integer input
  *
- * return : 1 if +, 0 if 0 and -1 if -
+ * Return: 1 if +, 0 if 0 and -1 if -
 */
 
 int print_sign(int n)
