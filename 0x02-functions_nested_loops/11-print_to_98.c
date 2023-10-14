@@ -9,13 +9,12 @@
 
 void print_to_98(int n)
 {
-int c
+int m
 	if (n > 98)
-		for (c = n; c > 98 ; c--)
-			printf("%d", c);
+		for (m = n; m > 98 ; m--)
+			printf("%d", m);
 	else
-		for (c = n; c < 98 ; c++)
-			printf("%d", c);
+		for (m = n; m < 98 ; m++)
+			printf("%d", m);
 	printf("98\n");
-
 }
