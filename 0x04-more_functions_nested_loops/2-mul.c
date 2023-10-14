@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * mult(int a, int b) - print mult of number
+ * mul(int a, int b) - print mult of number
  *
  * @a: input function
  * @b: input function
