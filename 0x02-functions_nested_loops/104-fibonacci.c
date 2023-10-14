@@ -1,4 +1,5 @@
 #include"main.h"
+#include<stdio.h>
 
 /**
  * numLength - returns the length of string
@@ -10,7 +11,7 @@
 
 int numLength(int num)
 {
-	int lenfth = 0;
+	int length = 0;
 
 	if (!num)
 		return (1);
@@ -45,7 +46,7 @@ int main(void)
 			initia--;
 		}
 		printf("%lu", f1);
-		sum = (f1 + f 2) % mx;
+		sum = (f1 + f2) % mx;
 		sumo = f1o + f2o + (f1 + f2) / mx;
 		f1 = f2;
 		f1o = f2o;
