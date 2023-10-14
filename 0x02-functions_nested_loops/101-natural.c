@@ -4,9 +4,9 @@
 /**
  * main - Entry point
  *
- * description: computes the sum of all multiple
+ * Description: computes the sum of all multiple of 3 or 5
  *
- * return: always 0 (success)
+ * Return: Always 0 (Success)
 */
 
 int main(void)
