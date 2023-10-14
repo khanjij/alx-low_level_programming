@@ -26,7 +26,7 @@ for (f = 1; f <= c - 1 ; f++)
 _putchar(' ');
 }
 _putchar(92);
-}
 _putchar('\n');
+}
 }
 }
