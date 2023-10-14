@@ -4,12 +4,12 @@
 /**
  * print_line - print character n time
  *
- * @n: input function
+ * @n: input function times the character
+ *	should be print
  *
- * Return: result
  */
 
-int print_line(int n)
+void print_line(int n)
 {
 	int c;
 
