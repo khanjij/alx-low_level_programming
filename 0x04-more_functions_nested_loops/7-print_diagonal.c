@@ -21,7 +21,7 @@ else
 {
 for (c = 1; c <= n ; c++)
 {
-for (f = 1; f < c ; f++)
+for (f = 1; f <= c - 1 ; f++)
 {
 _putchar(' ');
 }
