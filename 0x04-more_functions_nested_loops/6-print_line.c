@@ -1,12 +1,12 @@
 #include"main.h"
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * print_line - print character n time
  *
  * @n: input function
  *
- * Return: result 0
+ * Return: result
  */
 
 int print_line(int n)
