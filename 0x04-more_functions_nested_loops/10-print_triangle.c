@@ -28,7 +28,7 @@ _putchar(' ');
 }
 for (r = 1; r <= c ; r++)
 {
-_putchar("#");
+_putchar('#');
 }
 _putchar('\n');
 }
