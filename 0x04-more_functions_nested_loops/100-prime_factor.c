@@ -30,7 +30,7 @@ return (factor);
 }
 
 /**
- * Main - Entry point number
+ * main - Entry point number
  *
  * Description: largest factor of number
  *
