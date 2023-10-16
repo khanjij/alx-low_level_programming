@@ -24,10 +24,10 @@ len--;
 
 while (i < len)
 {
-char temp = s[i];
+temp = s[i];
 s[i] = s[len];
-s[len] = s[i];
+s[len] = temp;
 len--;
-i++
+i++;
 }
 }
