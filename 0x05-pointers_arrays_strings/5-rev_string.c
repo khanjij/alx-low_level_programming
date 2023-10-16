@@ -21,13 +21,11 @@ s++;
 s--;
 len--;
 
-while (len >= 0)
-{
 for (i = 0; i <= len ; i++)
-	{
-s[i] = *s;
-s--;
+{
+temp = s[i];
+s[i] = s[len];
+s[len] = s[i];
 len--;
-}
 }
 }
