@@ -22,11 +22,12 @@ s++;
 s--;
 len--;
 
-for (i = 0; i <= len ; i++)
+while (i < len)
 {
-temp = s[i];
+char temp = s[i];
 s[i] = s[len];
 s[len] = s[i];
 len--;
+i++
 }
 }
