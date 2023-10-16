@@ -17,9 +17,7 @@ char temp;
 while (*s != '\0')
 {
 len++;
-s++;
 }
-s--;
 len--;
 
 while (i < len)
