@@ -15,7 +15,7 @@ while (*str != '\0')
 l++;
 }
 
-for (i = l / 2; i <= l ; i++)
+for (i = l - (l / 2); i <= l ; i++)
 {
 	_putchar(str[i]);
 	}
