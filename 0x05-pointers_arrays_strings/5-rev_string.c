@@ -10,19 +10,21 @@
 
 void rev_string(char *s)
 {
-int l = 0;
-int i;
-char temp;
+int len = 0;
+int i = 0;
 
-while (*s != '\0')
+while (s[len] != '\0')
 {
-l++;
+len++;
 }
+len--;
 
-for (i = 0; i < l / 2; i++)
-	{
-	temp = s[i];
-	s[i] = s[l - 1 - i];
-	s[l - 1 - i] = temp;
-	}
+while (i < len)
+{
+char temp = s[i];
+s[i] = s[len];
+s[len] = temp;
+i++;
+len--;
+}
 }
