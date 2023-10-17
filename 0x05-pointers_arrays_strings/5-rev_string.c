@@ -14,9 +14,9 @@ int l ;
 int i;
 char temp;
 
-for (l = 0; s[l] != '\0' ; l++)
+for (l = 0; s[l] != '\0' ; ++l)
 {
-	for (i = 0; i < l / 2 ; i++)
+	for (i = 0; i < (l / 2) + 1 ; i++)
 	{
 	temp = s[i];
 	s[i] = s[l - 1 - i];
