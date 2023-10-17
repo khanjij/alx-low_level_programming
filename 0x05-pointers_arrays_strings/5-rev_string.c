@@ -17,15 +17,17 @@ char temp;
 while (*s != '\0')
 {
 len++;
+s++;
 }
 len--;
-
+s--;
 while (i < len)
 {
 temp = s[i];
 s[i] = s[len];
 s[len] = temp;
 len--;
+s--;
 i++;
 }
 }
