@@ -23,8 +23,8 @@ len--;
 s--;
 while (i < len)
 {
-temp = s[i];
-s[i] = s[len];
+temp = *S[i];
+s[i] = *s[len];
 s[len] = temp;
 len--;
 s--;
