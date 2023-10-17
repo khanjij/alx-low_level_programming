@@ -10,19 +10,16 @@ void puts_half(char *str)
 {
 	int i, r, l = 0;
 
-while (*str != '\0')
+while (str[i] != '\0')
 {
 l++;
 }
-l = l - 1;
 
-if (l % 2 == 0)
-{
 r = l / 2;
-}
+
 else if (l % 2 != 0)
 {
-	r = (l - 1) / 2;
+r++;	
 }
 
 for (i = r; i <= l ; i++)
