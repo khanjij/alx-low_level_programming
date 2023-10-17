@@ -19,11 +19,11 @@ while (*s != '\0')
 l++;
 }
 l--;
+
 for (i = 0; i <= l; i++)
 	{
 	temp = s[i];
 	s[i] = s[l - 1 - i];
 	s[l - 1 - i] = temp;
 	}
-}
 }
