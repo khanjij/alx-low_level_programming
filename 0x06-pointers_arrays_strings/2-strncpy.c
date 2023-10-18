@@ -6,6 +6,7 @@
  *
  * @src: string of character
  * @dest: string of character
+ * @n: number of character to copy
  *
  * Return: string character
  */
@@ -17,9 +18,10 @@ for (i = 0; i < n && src[i] != '\0'; i++)
 {
 dest[i] = src[i];
 }
-while (dest[i] != '\0')
+while (i < n)
 {
 dest[i] = '\0';
 i++;
 }
 return (dest);
+}

@@ -6,7 +6,7 @@
  *
  * @src: string of character
  * @dest: string of character
- *
+ * @n:  number of character to copy
  * Return: string character
  */
 char *_strncat(char *dest, char *src, int n)
