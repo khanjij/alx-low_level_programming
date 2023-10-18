@@ -25,5 +25,6 @@ dest[c] = src[c2];
 c++;
 c2++;
 }
+_putchar('\0');
 return (dest);
 }
