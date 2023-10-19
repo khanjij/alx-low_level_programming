@@ -24,9 +24,9 @@ if (*str == '.' || *str == '!' || *str == '{' || *str == '}')
 {
 capitalize = 1;
 }
-else if (capitalize != 0 && *str >= 97 && *str <= 122)
+else if (capitalize && *str >= 'a' && *str <= 'A')
 {
-*str = *str - 32;
+*str = *str - ('a' - 'A');
 capitalize = 0;
 }
 str++;
