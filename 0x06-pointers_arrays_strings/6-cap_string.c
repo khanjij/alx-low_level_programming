@@ -29,7 +29,7 @@ else if (capitalize != 0 && *str >= 97 && *str <= 122)
 *str = *str - 32;
 capitalize = 0;
 }
-}
 str++;
+}
 return (str);
 }
