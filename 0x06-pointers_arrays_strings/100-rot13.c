@@ -10,16 +10,21 @@
 char *rot13(char *str)
 {
 char *ptr = str;
+int i;
+char rot13[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char ROT13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 while (*ptr != '\0')
 {
-if ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z'))
+for (i = 0; i <= 52; i++)
 {
-char base = (*ptr >= 'a' && *ptr <= 'z') ? 'a' : 'A';
-*ptr = ((*ptr - base + 13) % 26) + base;
+	if (*str == rot13[i])
+	{
+		*str = ROT13[i];
+		break;
+	}
 }
-ptr++;
+str++;
 }
-
-return (str);
+return (ptr);
 }
