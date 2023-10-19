@@ -14,7 +14,7 @@ int i;
 char rot13[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 char ROT13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-while (*ptr != '\0')
+while (*str)
 {
 for (i = 0; i <= 52; i++)
 {
