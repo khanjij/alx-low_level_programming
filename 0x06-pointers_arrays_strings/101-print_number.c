@@ -8,6 +8,7 @@
  *
  * Return: integer
  */
+
 void print_number(int n)
 {
 unsigned int n1;
