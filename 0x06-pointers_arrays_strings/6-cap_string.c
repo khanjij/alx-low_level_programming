@@ -1,57 +1,56 @@
 #include <stdio.h>
-#include"main.h"
+#include "main.h"
+
 /**
  * isLower - determine whether ascii is lower
  * @c: character
- * Return: 1 if true ,0 if false
+ * Return: 1 if true, 0 if false
  */
-
-int islower(char c)
+int isLower(char c)
 {
-	return (c >= 97 && c <= 122);
+return (c >= 'a' && c <= 'z');
 }
 
 /**
- * isDelimiter - determine whether ascii id delimiter
+ * isDelimiter - determine whether ascii is delimiter
  * @c: character
- * Return: 1 if true,0 if false
+ * Return: 1 if true, 0 if false
  */
-
 int isDelimiter(char c)
 {
-	int i;
-	char delimiter[] = " \t\n,;.!?\"\(\)\{\} ";
+char delimiter[] = " \t\n,;.!?\"(){} ";
 
-	for (i = 0; i < 12; i++)
-	if (c == delimiter[i])
-		return (1);
-	else if
-		return (0);
+for (int i = 0; i < 13; i++)
+{
+if (c == delimiter[i])
+return (1);
+}
+return (0);
 }
 
 /**
-* cap_string - capitalize all word of a string
-* @str: input string
-* Return: string with capitalized word
-*/
-
+ * cap_string - capitalize all words of a string
+ * @str: input string
+ * Return: string with capitalized words
+ */
 char *cap_string(char *str)
 {
-	char *ptr = str;
-	int foundDelimit = 1;
+char *ptr = str;
+int foundDelimiter = 1;
 
 while (*str != '\0')
 {
-	if (isDelimiter(*str))
-		foudDelimit = 1;
-	else if (isLower(*str) && foundDelimit)
-	{
-		*str = *str - 32;
-		foundDelimit = 0;
-	}
-	else
-		foundDelimit = 0;
-	str++;
+if (isDelimiter(*str))
+foundDelimiter = 1;
+else if (isLower(*str) && foundDelimiter)
+{
+*str = *str - ('a' - 'A');
+foundDelimiter = 0;
 }
-	return (ptr)
+else
+foundDelimiter = 0;
+
+str++;
+}
+return (ptr);
 }
