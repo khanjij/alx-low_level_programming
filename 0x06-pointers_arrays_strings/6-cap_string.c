@@ -8,7 +8,7 @@
  */
 char *cap_string(char *str)
 {
-int capitalize = 1;
+int capitalize = 0;
 
 while (*str != '\0')
 {
@@ -18,7 +18,7 @@ capitalize = 1;
 }
 else if (*str == '?' || *str == '"' || *str == '(' || *str == ')')
 {
-capitalize = 1;
+capitalize = capitalize ? 1 : 0;
 }
 else if (*str == '.' || *str == '!' || *str == '{' || *str == '}')
 {
