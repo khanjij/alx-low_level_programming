@@ -1,35 +1,57 @@
 #include <stdio.h>
 #include"main.h"
 /**
- * cap_string - Capitalizes all words of a string
- * @str: The input string
- *
- * Return: Pointer to the resulting string
+ * isLower - determine whether ascii is lower
+ * @c: character
+ * Return: 1 if true ,0 if false
  */
+
+int islower(char c)
+{
+	return (c >= 97 && c <= 122);
+}
+
+/**
+ * isDelimiter - determine whether ascii id delimiter
+ * @c: character
+ * Return: 1 if true,0 if false
+ */
+
+int isDelimiter(char c)
+{
+	int i;
+	char delimiter[] = " \t\n,;.!?\"\(\)\{\} ";
+
+	for (i = 0; i < 12; i++)
+	if (c == delimiter[i])
+		return (1);
+	else if
+		return (0);
+}
+
+/**
+* cap_string - capitalize all word of a string
+* @str: input string
+* Return: string with capitalized word
+*/
+
 char *cap_string(char *str)
 {
-int capitalize = 1;
+	char *ptr = str;
+	int foundDelimit = 1;
 
 while (*str != '\0')
 {
-if (*str == ' ' || *str == '\t' || *str == '\n' || *str == ',' || *str == ';')
-{
-capitalize = 1;
+	if (isDelimiter(*str))
+		foudDelimit = 1;
+	else if (isLower(*str) && foundDelimit)
+	{
+		*str = *str - 32;
+		foundDelimit = 0;
+	}
+	else
+		foundDelimit = 0;
+	str++;
 }
-else if (*str == '?' || *str == '"' || *str == '(' || *str == ')')
-{
-capitalize = capitalize ? 1 : 0;
-}
-else if (*str == '.' || *str == '!' || *str == '{' || *str == '}')
-{
-capitalize = 1;
-}
-else if (capitalize && *str >= 'a' && *str <= 'A')
-{
-*str = *str - ('a' - 'A');
-capitalize = 0;
-}
-str++;
-}
-return (str);
+	return (ptr)
 }
