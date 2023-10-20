@@ -16,11 +16,11 @@ if (*str == ' ' || *str == '\t' || *str == '\n' || *str == ',' || *str == ';')
 {
 capitalize = 1;
 }
-if (*str == '?' || *str == '"' || *str == '(' || *str == ')')
+else if (*str == '?' || *str == '"' || *str == '(' || *str == ')')
 {
 capitalize = 1;
 }
-if (*str == '.' || *str == '!' || *str == '{' || *str == '}')
+else if (*str == '.' || *str == '!' || *str == '{' || *str == '}')
 {
 capitalize = 1;
 }
