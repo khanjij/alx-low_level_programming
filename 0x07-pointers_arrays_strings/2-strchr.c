@@ -16,9 +16,8 @@ for (i = 0; s[i] != '\0' ; i++)
 {
 	if (s[i] == c)
 	{
-	p = p + i;
-		return (p);
+	return (p + i);
 	}
 }
-	return (NULL);
+return (NULL);
 }
