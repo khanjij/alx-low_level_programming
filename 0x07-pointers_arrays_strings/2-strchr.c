@@ -20,5 +20,5 @@ for (i = 0; ; i++)
 		return (p);
 	}
 }
-	return ('\0');
+	return (NULL);
 }
