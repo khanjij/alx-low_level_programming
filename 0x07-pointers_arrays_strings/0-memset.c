@@ -4,8 +4,8 @@
  * _memset - replace n byte by b
  * @b: character
  * @n: unsigned int number of character to replace
- *
- * Return: pointer 
+ * @s: buffer
+ * Return: pointer
  */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -17,5 +17,6 @@ char *_memset(char *s, char b, unsigned int n)
 		*s = b;
 		s++;
 	}
-	return(s);
+	s--;
+return (s);
 }
