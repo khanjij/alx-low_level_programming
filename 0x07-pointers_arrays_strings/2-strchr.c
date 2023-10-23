@@ -18,8 +18,6 @@ for (i = 0; s[i] != '\0' ; i++)
 	{
 	return (p + i);
 	}
-	else if (s[i] != c)
-	return (NULL);
 }
 return (NULL);
 }
