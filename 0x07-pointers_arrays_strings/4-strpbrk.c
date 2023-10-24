@@ -1,5 +1,5 @@
-#include"main.h"
-#include<stddef.h>
+#include "main.h"
+#include <stddef.h>
 
 /**
  * _strpbrk - locate first occurence of c in string
