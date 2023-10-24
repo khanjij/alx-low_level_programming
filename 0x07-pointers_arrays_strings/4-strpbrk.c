@@ -1,4 +1,5 @@
 #include"main.h"
+#include<stddef.h>
 
 /**
  * _strpbrk - locate first occurence of c in string
@@ -9,8 +10,20 @@
 
 char *_strpbrk(char *s, char *accept)
 {
+	int i;
 
-	while(s[j]= 0 )
-		for (i = 0 ; accept[i] != '\0' ; j++)
-			if (accept[i] == s[i])
-			return (s[i])
+	if (s == NULL || accept == NULL)
+	{
+		return (NULL);
+	}
+	while (s != NULL)
+	{
+		for (i = 0 ; accept[i] != '\0' ; i++)
+		{
+			if (*s  == *(accept + i))
+				return (s);
+		}
+		s++;
+	}
+	return (NULL);
+}
