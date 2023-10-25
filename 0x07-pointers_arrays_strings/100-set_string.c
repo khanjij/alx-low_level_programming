@@ -24,11 +24,13 @@ void set_string(char **s, char *to)
 		{
 			**s = to[j];
 			s++;
+			return (s);
 		}
 		while (j <= l1)
 			**s = '\0';
 		j++;
 		s++;
+		return (s);
 	}
 	if (l2 >= l1)
 	{
@@ -36,6 +38,7 @@ void set_string(char **s, char *to)
 		{
 			**s = to[i];
 			s++;
+			return (s);
 		}
 	}
 }
