@@ -22,19 +22,20 @@ void set_string(char **s, char *to)
 	{
 		for (j = 0 ; j <= l2 ; j++)
 		{
-			**s = to[j]
-			*(s)++;
+			**s = to[j];
+			s++;
 		}
 		while (j <= l1)
 			**s = '\0';
 		j++;
+		s++;
 	}
 	if (l2 >= l1)
 	{
 		for (i = 0 ; i <= l2 ; i++)
 		{
 			**s = to[i];
-			*s++;
+			s++;
 		}
 	}
 }
