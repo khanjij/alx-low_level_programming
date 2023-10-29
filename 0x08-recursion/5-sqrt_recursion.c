@@ -22,7 +22,7 @@ int the_sqrt(int n, int i)
 	if (i * i > n)
 		return (-1);
 
-	if (i * i == 0)
+	if (i * i == n)
 		return (i);
 
 if (i * i < n)
