@@ -1,4 +1,5 @@
 #include"main.h"
+#include<stdio.h>
 /**
  *is_prime_number - print f int if primenumber or not
  * @n: input integer
@@ -12,6 +13,8 @@ int is_prime_number(int n)
 		return (1);
 	if (n > 3)
 return (prime_num(n, 2));
+
+return (0);
 }
 /**
  * prime_num - calculate if integer is prime number
