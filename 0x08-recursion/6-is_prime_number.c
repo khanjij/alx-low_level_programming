@@ -11,7 +11,7 @@ int is_prime_number(int n)
 		return (0);
 	if (n <= 3)
 		return (1);
-	if (n > 3)
+if (n > 3)
 return (prime_num(n, 2));
 
 return (0);
