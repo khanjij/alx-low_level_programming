@@ -1,4 +1,3 @@
-#include "main.h"
 #include<stdio.h>
 
 /**
@@ -8,8 +7,11 @@
  * Return: always 0 (Success)
  */
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
-	printf("%s\n", *argv);
+	if (argc > 0)
+	{
+		printf("%s\n", *argv);
+	}
 	return (0);
 }
