@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int cents
 
-if (argc < 2)
+if (argc != 2)
 {
 printf("Error\n");
 return (1);
@@ -27,21 +27,26 @@ printf("0\n");
 return (0);
 }
 
-int quarters = cents / 25;
+if (cents / 25 != 0)
+int q = cents / 25;
 cents %= 25;
 
-int dimes = cents / 10;
+if (cents / 10 != 0)
+int d = cents / 10;
 cents %= 10;
 
-int nickels = cents / 5;
+if (cents / 5 != 0)
+int n = cents / 5;
 cents %= 5;
 
-int twos = cents / 2;
+if (cent / 2 != 0)
+int t = cents / 2;
 cents %= 2;
 
-int ones = cents;
+if (cents / 1 != 0)
+int o = cents;
 
-printf("%d quarters, %d dimes, %d nickels\n", quarters, dimes, nickels);
-printf("%d twos, %d ones\n", twos, ones);
+int sum = q + d + t + o;
+printf("%d\n", sum);
 return (0);
 }
