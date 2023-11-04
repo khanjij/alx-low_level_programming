@@ -39,11 +39,11 @@ if (cents / 5 != 0)
 int n = cents / 5;
 cents %= 5;
 
-if (cent / 2 != 0)
+if (cents / 2 != 0)
 int t = cents / 2;
 cents %= 2;
 
-if (cents / 1 != 0)
+
 int o = cents;
 
 int sum = q + d + t + o;
