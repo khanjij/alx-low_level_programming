@@ -13,17 +13,18 @@
 
 int main(int argc, char *argv[])
 {
-	int num;
+	int i, j, num;
 	int sum = 0;
 
-	if (argc == 1)
+	if (argc < 2)
 	{
 		printf("0\n");
+		return (0);
 	}
 
-	for (int i = 1; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
-	for (int j = 0; argv[i][j] != '\0'; j++)
+	for (j = 0; argv[i][j] != '\0'; j++)
 	{
 			if (!isdigit(argv[i][j]))
 			{
